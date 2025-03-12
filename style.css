@@ -188,7 +188,7 @@ textarea {
 .resume {
   color: #fff;
   background-blend-mode: screen;
-  background: linear-gradient(to right, rgb(25, 25, 25), rgb(31, 30, 30)), url(../../assets/png/bg3.jpg);
+  background: linear-gradient(to right, rgb(0, 0, 0), rgb(0, 0, 0)), url(../../assets/png/bg3.jpg);
   background-position: center;
   padding: 80px 0; /* Increased vertical spacing for improved layout */ 
 }
@@ -272,7 +272,7 @@ textarea {
 .home-hero {
   color: #fff;
   background-blend-mode: screen;
-  background: linear-gradient(to right, rgb(25, 25, 25), rgb(31, 30, 30)), url(../../assets/png/bg2.png);
+  background: linear-gradient(to right, rgb(0, 0, 0), rgb(0, 0, 0)), url(../../assets/png/bg2.png);
   background-position: center;
   height: 100vh;
   min-height: 70rem;
@@ -335,7 +335,7 @@ textarea {
     text-align: center; }
 
 .about {
-  background: rgb(17, 17, 17); }
+  background: rgb(23, 23, 23); }
   .about__content {
     display: grid;
     color: whitesmoke;
