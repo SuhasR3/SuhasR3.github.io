@@ -1,373 +1,553 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Suhas Raghavendra</title>
-    <meta name="description" content="Portfolio Template for Developer" />
 
-    <link rel="stylesheet" href="style.css" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header class="header">
-      <div class="header__content">
-        <div class="header__logo-container">
-          <span class="header__logo-sub">Suhas Raghavendra</span>
-        </div>
-        <div class="header__main">
-          <ul class="header__links">
-            <li class="header__link-wrapper">
-              <a href="#home" class="header__link">Home</a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="#about" class="header__link">About</a>             </a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="#resume" class="header__link">Resume</a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="#projects" class="header__link">Projects</a>             </a>
-            </li>
-            
-          </ul>
-          <div class="header__main-ham-menu-cont">
-            <img
-              src="./assets/svg/ham-menu.svg"
-              alt="hamburger menu"
-              class="header__main-ham-menu"
-            />
-            <img
-              src="./assets/svg/ham-menu-close.svg"
-              alt="hamburger menu close"
-              class="header__main-ham-menu-close d-none"
-            />
-          </div>
-        </div>
-      </div>
-      <div class="header__sm-menu">
-        <div class="header__sm-menu-content">
-          <ul class="header__sm-menu-links">
-            <li class="header__sm-menu-link">
-              <a href="#home" class="header__link">Home</a>
-            </li>
-            <li class="header__sm-menu-link">
-              <a href="#about" class="header__link">About</a>             </a>
-            </li>
-            <li class="header__sm-menu-link">
-              <a href="#resume" class="header__link">Resume</a>
-            </li>
-            <li class="header__sm-menu-link">
-              <a href="#projects" class="header__link">Projects</a>             </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </header>
-    <section id="home" class="home-hero parallax">
-      <div class="home-hero__content">
-        <div class="home-hero__profile-img-cont">
-          <img
-            src="./assets/png/sos.JPG"
-            alt="Suhas Raghavendra Profile"
-            class="home-hero__profile-img"
-          />
-        </div>
-        <h1 class="home-hero__heading">
-          <span class="home-hero__name">Suhas Raghavendra</span>
-          <span class="home-hero__typewriter"></span>
-        </h1>
-        <div class="home-hero__socials-row">
-          <a
-            href="https://www.linkedin.com/in/suhasr3/"
-            class="home-hero__social-icon-link"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img
-              src="./assets/png/linkedin-ico.png"
-              alt="LinkedIn"
-              class="home-hero__social-icon"
-            />
-          </a>
-          <a
-            href="https://github.com/SuhasR3"
-            class="home-hero__social-icon-link"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img
-              src="./assets/png/github-ico.png"
-              alt="GitHub"
-              class="home-hero__social-icon"
-            />
-          </a>
-          <a
-            href="mailto:sragha23@asu.edu"
-            class="home-hero__social-icon-link"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img
-              src="./assets/png/email.png"
-              alt="Email"
-              class="home-hero__social-icon"
-            />
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="about sec-pad">
-      <div class="main-container">
-        <h2 class="heading heading-sec heading-sec__mb-med">
-          <span class="heading-sec__main">About Me</span>
-          <span class="heading-sec__sub">
-          Data Engineering | Data Analysis |  Machine Learning  
-          </span>
-        </h2>
-        <div class="about__content">
-          <div class="about__content-main">
-            <h3 class="about__content-title">Get to know me!</h3>
-            <div class="about__content-details">
-              <p class="about__content-details-para">
-                Hey! I’m Suhas Raghavendra, a Data Scientist passionate about turning raw data into actionable insights. 
-                I’ve worked on machine learning models, predictive analytics, and NLP research, 
-                helping businesses optimize processes and make smarter decisions.
-              </p>
-              <p class="about__content-details-para">
-                From deploying AI-driven forecasting models to building interactive dashboards, 
-                I enjoy bridging the gap between complex data and real-world impact. 
-                Whether it's fine-tuning deep learning architectures or automating ETL workflows, 
-                I love tackling challenges that push the boundaries of data science.
-                let’s connect and explore ideas!
-              </p>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SUHAS RAGHAVENDRA // PORTFOLIO</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-primary-fixed-variant": "#3b0060",
+              "inverse-primary": "#7b4ea3",
+              "surface": "#131313",
+              "surface-tint": "#b186d9",
+              "surface-container": "#201f1f",
+              "on-primary-container": "#3b0060",
+              "tertiary": "#ffbebc",
+              "surface-dim": "#131313",
+              "secondary": "#c8c6c5",
+              "background": "#131313",
+              "surface-bright": "#393939",
+              "tertiary-fixed-dim": "#ffb3b1",
+              "surface-variant": "#353534",
+              "inverse-surface": "#e5e2e1",
+              "surface-container-low": "#1c1b1b",
+              "on-primary-fixed": "#1b0032",
+              "on-background": "#e5e2e1",
+              "on-tertiary-fixed": "#410007",
+              "inverse-on-surface": "#313030",
+              "surface-container-highest": "#353534",
+              "tertiary-container": "#ff9594",
+              "on-secondary-container": "#b6b5b4",
+              "on-tertiary-container": "#8f001b",
+              "surface-container-high": "#2a2a2a",
+              "secondary-fixed": "#e4e2e1",
+              "on-primary": "#ffffff",
+              "outline-variant": "#4d4635",
+              "primary": "#b186d9",
+              "primary-container": "#7b4ea3",
+              "secondary-fixed-dim": "#c8c6c5",
+              "primary-fixed": "#e9d5ff",
+              "on-secondary-fixed-variant": "#474747",
+              "outline": "#907c99",
+              "on-surface-variant": "#c5afcf",
+              "primary-fixed-dim": "#b186d9",
+              "tertiary-fixed": "#ffdad8",
+              "secondary-container": "#474747",
+              "on-secondary-fixed": "#1b1c1c",
+              "on-error-container": "#ffdad6",
+              "on-tertiary-fixed-variant": "#92001c",
+              "on-secondary": "#303030",
+              "error": "#ffb4ab",
+              "on-error": "#690005",
+              "on-tertiary": "#680011",
+              "surface-container-lowest": "#0e0e0e",
+              "on-surface": "#e5e2e1",
+              "error-container": "#93000a",
+              "deep-purple": "#7b4ea3"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Inter"],
+              "label": ["Space Grotesk"],
+              "mono": ["JetBrains Mono"]
+            },
+            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-panel {
+            background: rgba(53, 53, 52, 0.6);
+            backdrop-filter: blur(20px);
+        }
+        .primary-gradient {
+            background: linear-gradient(135deg, #b186d9 0%, #7b4ea3 100%);
+        }
+        body {
+            background-color: #131313;
+            color: #e5e2e1;
+            font-family: 'Inter', sans-serif;
+        }
+        .scanline {
+            width: 100%;
+            height: 100px;
+            z-index: 10;
+            background: linear-gradient(0deg, rgba(177, 134, 217, 0.03) 0%, rgba(177, 134, 217, 0) 100%);
+            position: absolute;
+            pointer-events: none;
+        }
+        .project-card-image {
+            transition: transform 0.5s ease;
+        }
+        .project-card:hover .project-card-image {
+            transform: scale(1.05);
+        }
+        .experience-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+        }
+        .experience-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px -10px rgba(177, 134, 217, 0.2), 0 0 15px rgba(177, 134, 217, 0.1);
+            border-color: rgba(177, 134, 217, 0.3);
+        }
+    </style>
+</head>
+<body class="selection:bg-primary selection:text-on-primary">
+<!-- Top Navigation Bar -->
+<header class="fixed top-0 w-full flex justify-between items-center px-8 md:px-12 py-6 bg-[#131313]/80 backdrop-blur-xl border-b border-[#353534]/30 z-50">
+<div class="font-['Space_Grotesk'] font-bold text-[#b186d9] tracking-tighter text-xl uppercase">
+        Suhas Raghavendra Portfolio
+    </div>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="font-['Space_Grotesk'] uppercase tracking-[0.1em] text-xs text-[#e5e2e1]/60 hover:text-[#b186d9] transition-all duration-75" href="#experience">01/EXPERIENCE</a>
+<a class="font-['Space_Grotesk'] uppercase tracking-[0.1em] text-xs text-[#e5e2e1]/60 hover:text-[#b186d9] transition-all duration-75" href="#projects">02/PROJECTS</a>
+<a class="font-['Space_Grotesk'] uppercase tracking-[0.1em] text-xs text-[#e5e2e1]/60 hover:text-[#b186d9] transition-all duration-75" href="#skills">03/SKILLS</a>
+<a class="font-['Space_Grotesk'] uppercase tracking-[0.1em] text-xs text-[#e5e2e1]/60 hover:text-[#b186d9] transition-all duration-75" href="#contact">04/CONTACT</a>
+</nav>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</header>
+<main class="min-h-screen">
+<!-- Hero Section -->
+<section class="relative min-h-screen flex flex-col justify-center px-8 md:px-24 pt-20 overflow-hidden">
+<div class="absolute inset-0 z-0 overflow-hidden opacity-10">
+<div class="grid grid-cols-12 h-full w-full">
+<div class="col-span-12 border-l border-outline-variant/20 h-full relative">
+<div class="absolute top-1/4 left-0 w-full h-[1px] bg-primary/20"></div>
+<div class="absolute top-2/3 left-0 w-full h-[1px] bg-primary/20"></div>
+</div>
+</div>
+</div>
+<div class="relative z-10 max-w-5xl mx-auto w-full">
+<div class="flex items-center gap-4 mb-6">
+<span class="font-mono text-primary text-xs tracking-widest opacity-80 uppercase">SYSTEM_INIT // 2026.05</span>
+<div class="h-[1px] w-24 bg-primary/30"></div>
+</div>
+<h1 class="font-headline text-6xl md:text-8xl font-black text-on-surface tracking-tighter mb-4 leading-[0.9]">
+                SUHAS<br/>RAGHAVENDRA
+            </h1>
+<div class="flex flex-col md:flex-row md:items-end gap-8 mt-12">
+<div class="flex-1">
+<p class="font-headline text-2xl text-primary font-medium tracking-tight mb-2 uppercase">
+                        Software Engineer | Backend Systems &amp; Distributed Infrastructure
+                    </p>
+<p class="font-body text-on-surface-variant text-lg max-w-xl opacity-70">
+                        MS Data Science @ ASU | 4.0 GPA | May 2026 graduation. Crafting high-performance distributed architectures and resilient backend ecosystems.
+                    </p>
+</div>
+<div class="flex flex-col gap-3 font-mono text-[11px] uppercase tracking-widest text-[#b186d9]/60">
+<a class="flex items-center gap-2 hover:text-primary transition-colors" href="https://github.com/SuhasR3">
+<span class="material-symbols-outlined text-sm">code</span> GITHUB.COM/SUHASR3
+                    </a>
+<a class="flex items-center gap-2 hover:text-primary transition-colors" href="https://www.linkedin.com/in/suhasr3/">
+<span class="material-symbols-outlined text-sm">link</span> LINKEDIN.COM/IN/SUHASR3
+                    </a>
+<a class="flex items-center gap-2 hover:text-primary transition-colors" href="mailto:sragha23@asu.edu">
+<span class="material-symbols-outlined text-sm">mail</span> SRAGHA23@ASU.EDU
+                    </a>
+</div>
+</div>
+</div>
+<!-- Hero Decorative Scroll Indicator -->
+<div class="absolute bottom-12 right-24 hidden lg:flex flex-col items-center gap-4">
+<span class="font-mono text-[10px] vertical-text tracking-widest text-primary/40 uppercase rotate-90 mb-8">SCROLL_TO_EXECUTE</span>
+<div class="w-[1px] h-24 bg-gradient-to-b from-primary to-transparent"></div>
+</div>
+</section>
+<!-- Section 01: Experience -->
+<section class="py-32 px-8 md:px-24 bg-surface-container-low" id="experience">
+<div class="max-w-6xl mx-auto">
+<div class="flex items-baseline gap-4 mb-20">
+<h2 class="font-headline text-5xl font-black tracking-tighter uppercase text-on-surface">01/EXPERIENCE</h2>
+<div class="flex-1 h-[2px] bg-primary/10"></div>
+</div>
+<div class="space-y-12">
+<!-- ASU Card -->
+<div class="experience-card group p-8 md:p-12 bg-surface border border-outline-variant/10 relative">
+<div class="grid md:grid-cols-12 gap-8 items-start">
+<div class="md:col-span-4">
+<span class="font-mono text-primary text-xs tracking-tighter mb-2 block">2025 // PRESENT</span>
+<h3 class="font-headline text-2xl font-bold uppercase tracking-tight text-on-surface">Arizona State University</h3>
+<p class="font-mono text-on-surface-variant text-[11px] uppercase tracking-widest opacity-60">Part-Time Software Engineer</p>
+</div>
+<div class="md:col-span-8 border-l border-outline-variant/10 pl-8 py-1">
+<div class="space-y-6">
+<div class="relative">
+<div class="absolute -left-[37px] top-1.5 w-2 h-2 bg-primary"></div>
+<p class="font-body text-on-surface-variant leading-relaxed">
+                                        Architected a <span class="text-primary font-medium">high-concurrency analytics platform</span> utilizing WebSocket synchronization for 1,000+ concurrent users, maintaining p95 latency under 100ms.
+                                    </p>
+</div>
+<div>
+<p class="font-body text-on-surface-variant leading-relaxed">
+                                        Engineered a <span class="text-primary font-medium">Redis caching layer</span> that reduced primary MongoDB load by 40% during burst traffic periods.
+                                    </p>
+</div>
+<div>
+<p class="font-body text-on-surface-variant leading-relaxed">
+                                        Developed an <span class="text-primary font-medium">LLM-powered QA pipeline</span> which increased project code coverage from 60% to 88%, identifying over 15 security vulnerabilities before deployment.
+                                    </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Vollmer Technologies Card -->
+<div class="experience-card group p-8 md:p-12 bg-surface border border-outline-variant/10 relative">
+<div class="grid md:grid-cols-12 gap-8 items-start">
+<div class="md:col-span-4">
+<span class="font-mono text-primary text-xs tracking-tighter mb-2 block">2023 // 2024</span>
+<h3 class="font-headline text-2xl font-bold uppercase tracking-tight text-on-surface">Vollmer Technologies</h3>
+<p class="font-mono text-on-surface-variant text-[11px] uppercase tracking-widest opacity-60">Software Engineer</p>
+</div>
+<div class="md:col-span-8 border-l border-outline-variant/10 pl-8 py-1">
+<div class="space-y-6">
+<div class="relative">
+<div class="absolute -left-[37px] top-1.5 w-2 h-2 bg-outline-variant"></div>
+<p class="font-body text-on-surface-variant leading-relaxed">
+                                        Developed <span class="text-primary font-medium">REST APIs with Spring Boot</span> serving 20K+ active users with p95 &lt; 50ms and 99.9% uptime.
+                                    </p>
+</div>
+<div>
+<p class="font-body text-on-surface-variant leading-relaxed">
+                                        Implemented a <span class="text-primary font-medium">Kafka observability pipeline</span> ingesting 50K+ telemetry events/min with strict schema enforcement.
+                                    </p>
+</div>
+<div>
+<p class="font-body text-on-surface-variant leading-relaxed">
+                                        Optimized critical <span class="text-primary font-medium">O(n²) hotspots</span> using hash-based lookups, reducing p99 latency by 15% across core modules.
+                                    </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Str8bat Card -->
+<div class="experience-card group p-8 md:p-12 bg-surface border border-outline-variant/10 relative">
+<div class="grid md:grid-cols-12 gap-8 items-start">
+<div class="md:col-span-4">
+<span class="font-mono text-primary text-xs tracking-tighter mb-2 block">2022 // 2023</span>
+<h3 class="font-headline text-2xl font-bold uppercase tracking-tight text-on-surface">Str8bat Solutions</h3>
+<p class="font-mono text-on-surface-variant text-[11px] uppercase tracking-widest opacity-60">Software Engineer Intern</p>
+</div>
+<div class="md:col-span-8 border-l border-outline-variant/10 pl-8 py-1">
+<div class="space-y-6">
+<div class="relative">
+<div class="absolute -left-[37px] top-1.5 w-2 h-2 bg-outline-variant"></div>
+<p class="font-body text-on-surface-variant leading-relaxed">
+                                        Designed a <span class="text-primary font-medium">self-healing container monitoring script</span> which reduced manual intervention requirements by 25%.
+                                    </p>
+</div>
+<div>
+<p class="font-body text-on-surface-variant leading-relaxed">
+                                        Successfully <span class="text-primary font-medium">migrated 5 microservices to AWS Lambda</span>, achieving a cost saving of $9k/month for the organization.
+                                    </p>
+</div>
+<div>
+<p class="font-body text-on-surface-variant leading-relaxed">
+                                        Integrated CI/CD automation with <span class="text-primary font-medium">GitHub Actions</span>, reducing average release cycles by 18%.
+                                    </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 02: Projects -->
+<section class="py-32 px-8 md:px-24 bg-surface" id="projects">
+<div class="max-w-6xl mx-auto">
+<div class="flex items-baseline gap-4 mb-20">
+<h2 class="font-headline text-5xl font-black tracking-tighter uppercase text-on-surface">02/PROJECTS</h2>
+<div class="flex-1 h-[2px] bg-primary/10"></div>
+</div>
+<div class="grid grid-cols-1 gap-8 lg:grid-cols-3 md:grid-cols-2">
+<!-- Project 1: GoDFS -->
+<div class="project-card group relative bg-surface-container-low border border-outline-variant/20 overflow-hidden flex flex-col">
+<div class="relative h-64 overflow-hidden">
+<img alt="Distributed server racks representing GoDFS" class="project-card-image w-full h-full object-cover grayscale opacity-50 group-hover:opacity-80 group-hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3VCUwmCFP-qdvfX7gGG0bohU0POUntCoxvKfAnW9w4QjfhA5MI4OTezp4O0uPzihn-Bu0nkqZrZp1OEH89MXvsq1HdSdIldbZ11mET_Zq3VooOPeHdMF3vZmgZtLONmG6cBabuuQt6Hd3POZAAZbSRosRlwUJX1weuLAsRuO1Q6mnC-7c_WW-FylMQi1Y_jKoTq0bt3qY0M6cLHW50LGAQzFtxKq1o__cwtF2_VIkc2HMJMWq7rRiEwH6jUNdwBXrjdip27VaHUAm"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low to-transparent"></div>
+</div>
+<div class="p-8 flex-1 flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-center mb-4">
+<h3 class="font-headline text-2xl font-bold uppercase tracking-tight text-on-surface group-hover:text-primary transition-colors">GoDFS</h3>
+<a class="text-primary/60 hover:text-primary transition-colors" href="https://github.com/SuhasR3/GoDFS">
+<span class="material-symbols-outlined text-xl">arrow_outward</span>
+</a>
+</div>
+<p class="font-body text-on-surface-variant text-sm leading-relaxed mb-8">
+                                Fault-tolerant distributed file system with Raft leader election and consistent hashing. Achieved 99% availability across a 5-node cluster.
+                            </p>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="px-2 py-0.5 bg-surface-container-highest border border-outline-variant/30 font-mono text-[9px] text-primary/80 uppercase tracking-widest">GOLANG</span>
+<span class="px-2 py-0.5 bg-surface-container-highest border border-outline-variant/30 font-mono text-[9px] text-primary/80 uppercase tracking-widest">GRPC</span>
+<span class="px-2 py-0.5 bg-surface-container-highest border border-outline-variant/30 font-mono text-[9px] text-primary/80 uppercase tracking-widest">RAFT</span>
+<span class="px-2 py-0.5 bg-surface-container-highest border border-outline-variant/30 font-mono text-[9px] text-primary/80 uppercase tracking-widest">DOCKER</span>
+</div>
+</div>
+</div>
+<!-- Project 2: SentinelCode -->
+<div class="project-card group relative bg-surface-container-low border border-outline-variant/20 overflow-hidden flex flex-col">
+<div class="relative h-64 overflow-hidden">
+<img alt="Digital shield and code for SentinelCode" class="project-card-image w-full h-full object-cover grayscale opacity-50 group-hover:opacity-80 group-hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNmJMgGBQhmDxv9BSdasv8BzyjiSkfqqM0QWrzP9ScBPADeL17MEnBQhUGAjAx-GDuyeyQr5qj0Mv_SH4ia-7vT2qkgfiPRUdt5TtSW9Xu2r5p8HBKUKvG2mHLQASJINtBNu1rRTdGxrkZsRuWc6eMEiNdfvm51E1dCuUksIRmSiT9u74vEBhxmW1Tu2IwpaWn9GyyU-oidu5-ZDJYJKXlHV4xh2QlYzbXQrqWCjVsKbppK6JJDYhRWGFCi1UJU6XMygpoL2SSBxP_"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low to-transparent"></div>
+</div>
+<div class="p-8 flex-1 flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-center mb-4">
+<h3 class="font-headline text-2xl font-bold uppercase tracking-tight text-on-surface group-hover:text-primary transition-colors">SentinelCode</h3>
+<a class="text-primary/60 hover:text-primary transition-colors" href="https://github.com/SuhasR3/SentinelCode-multimodal-code-review-accelerator">
+<span class="material-symbols-outlined text-xl">arrow_outward</span>
+</a>
+</div>
+<p class="font-body text-on-surface-variant text-sm leading-relaxed mb-8">
+                                AI-driven multimodal code review system combining CodeBERT for semantics and XGBoost for structural metrics with SHAP explainability.
+                            </p>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="px-2 py-0.5 bg-surface-container-highest border border-outline-variant/30 font-mono text-[9px] text-primary/80 uppercase tracking-widest">PYTHON</span>
+<span class="px-2 py-0.5 bg-surface-container-highest border border-outline-variant/30 font-mono text-[9px] text-primary/80 uppercase tracking-widest">XGBOOST</span>
+<span class="px-2 py-0.5 bg-surface-container-highest border border-outline-variant/30 font-mono text-[9px] text-primary/80 uppercase tracking-widest">CODEBERT</span>
+<span class="px-2 py-0.5 bg-surface-container-highest border border-outline-variant/30 font-mono text-[9px] text-primary/80 uppercase tracking-widest">SECURITY</span>
+</div>
+</div>
+</div>
+<!-- Project 3: QuestMind -->
+<div class="project-card group relative bg-surface-container-low border border-outline-variant/20 overflow-hidden flex flex-col">
+<div class="relative h-64 overflow-hidden">
+<img alt="Neural network/brain for QuestMind" class="project-card-image w-full h-full object-cover grayscale opacity-50 group-hover:opacity-80 group-hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGZvalPQA4YDKCklHzp16xmjrRnRQGXuKnh5qeooYrz9_NhYMDVK9TAHX9IQDXcE9Neqbu4yY4ACU09OWCt_BLF_GMVRZDWKU_krBuGFk3m8f815KsnRdsrXGKdz8OTrgvqrFgbfbxbjumKak_mHj-ooUVll-OqyEgI3ozu5lfczDzHNSXGSyP0ReUSztxcdhGwnTLUBn7O5ItEugX6TvdiPHg22l0jsXveGxNO1S7E3PkXq6BdehICe0t3CJM_eubWSS_WiTcmccA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low to-transparent"></div>
+</div>
+<div class="p-8 flex-1 flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-center mb-4">
+<h3 class="font-headline text-2xl font-bold uppercase tracking-tight text-on-surface group-hover:text-primary transition-colors">QuestMind</h3>
+<a class="text-primary/60 hover:text-primary transition-colors" href="https://github.com/SuhasR3/QuestMind">
+<span class="material-symbols-outlined text-xl">arrow_outward</span>
+</a>
+</div>
+<p class="font-body text-on-surface-variant text-sm leading-relaxed mb-8">
+                                Mental health RPG built at Claude Builders Club Hackathon where psychological challenges manifest as dynamic fantasy encounters.
+                            </p>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="px-2 py-0.5 bg-surface-container-highest border border-outline-variant/30 font-mono text-[9px] text-primary/80 uppercase tracking-widest">PYTORCH</span>
+<span class="px-2 py-0.5 bg-surface-container-highest border border-outline-variant/30 font-mono text-[9px] text-primary/80 uppercase tracking-widest">ANTHROPIC_API</span>
+<span class="px-2 py-0.5 bg-surface-container-highest border border-outline-variant/30 font-mono text-[9px] text-primary/80 uppercase tracking-widest">NODE.JS</span>
+<span class="px-2 py-0.5 bg-surface-container-highest border border-outline-variant/30 font-mono text-[9px] text-primary/80 uppercase tracking-widest">REINFORCEMENT_LEARNING</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 03: Skills -->
+<section class="py-32 px-8 md:px-24 bg-surface-container-low overflow-hidden relative" id="skills">
+<!-- Background terminal decoration -->
+<div class="absolute right-0 top-0 h-full w-1/3 opacity-5 hidden lg:block pointer-events-none">
+<div class="font-mono text-[10px] space-y-2 p-12 overflow-hidden h-full">
+<p>&gt; FETCHING SYSTEM_STACK...</p>
+<p>&gt; LOAD: KERNEL_MODULES</p>
+<p>&gt; IMPORT: DISTRIBUTED_RESOURCES</p>
+<p>&gt; SCANNING_NETWORK_PORTS...</p>
+<p>&gt; JAVA_17_RUNTIME: ACTIVE</p>
+<p>&gt; PYTHON_3.11: ACTIVE</p>
+<p>&gt; GOLANG_1.22: ACTIVE</p>
+<p>&gt; KUBERNETES_CLUSTER: ONLINE</p>
+<p>&gt; REFRESH_RATE: 50MS</p>
+<p>&gt; MEMORY_LATENCY: OPTIMIZED</p>
+</div>
+</div>
+<div class="max-w-6xl mx-auto relative z-10">
+<div class="flex items-baseline gap-4 mb-20">
+<h2 class="font-headline text-5xl font-black tracking-tighter uppercase text-on-surface">03/SKILLS</h2>
+<div class="flex-1 h-[2px] bg-primary/10"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+<!-- Languages -->
+<div>
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">terminal</span>
+<h3 class="font-headline text-lg font-bold uppercase tracking-widest">Languages</h3>
+</div>
+<ul class="space-y-3">
+<li class="flex items-center justify-between group border-b border-outline-variant/10 pb-2">
+<span class="font-body text-on-surface-variant">Python</span>
+<span class="font-mono text-[10px] text-primary opacity-0 group-hover:opacity-100 transition-opacity">0x01</span>
+</li>
+<li class="flex items-center justify-between group border-b border-outline-variant/10 pb-2">
+<span class="font-body text-on-surface-variant">Java</span>
+<span class="font-mono text-[10px] text-primary opacity-0 group-hover:opacity-100 transition-opacity">0x02</span>
+</li>
+<li class="flex items-center justify-between group border-b border-outline-variant/10 pb-2">
+<span class="font-body text-on-surface-variant">Go</span>
+<span class="font-mono text-[10px] text-primary opacity-0 group-hover:opacity-100 transition-opacity">0x03</span>
+</li>
+<li class="flex items-center justify-between group border-b border-outline-variant/10 pb-2">
+<span class="font-body text-on-surface-variant">TypeScript</span>
+<span class="font-mono text-[10px] text-primary opacity-0 group-hover:opacity-100 transition-opacity">0x04</span>
+</li>
+<li class="flex items-center justify-between group border-b border-outline-variant/10 pb-2">
+<span class="font-body text-on-surface-variant">SQL</span>
+<span class="font-mono text-[10px] text-primary opacity-0 group-hover:opacity-100 transition-opacity">0x05</span>
+</li>
+</ul>
+</div>
+<!-- Frameworks -->
+<div>
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">architecture</span>
+<h3 class="font-headline text-lg font-bold uppercase tracking-widest">Frameworks</h3>
+</div>
+<ul class="space-y-3">
+<li class="flex items-center justify-between group border-b border-outline-variant/10 pb-2">
+<span class="font-body text-on-surface-variant">Spring Boot</span>
+<span class="font-mono text-[10px] text-primary opacity-0 group-hover:opacity-100 transition-opacity">LVL_9</span>
+</li>
+<li class="flex items-center justify-between group border-b border-outline-variant/10 pb-2">
+<span class="font-body text-on-surface-variant">Kafka</span>
+<span class="font-mono text-[10px] text-primary opacity-0 group-hover:opacity-100 transition-opacity">STR_8</span>
+</li>
+<li class="flex items-center justify-between group border-b border-outline-variant/10 pb-2">
+<span class="font-body text-on-surface-variant">Node.js</span>
+<span class="font-mono text-[10px] text-primary opacity-0 group-hover:opacity-100 transition-opacity">DEX_7</span>
+</li>
+<li class="flex items-center justify-between group border-b border-outline-variant/10 pb-2">
+<span class="font-body text-on-surface-variant">gRPC</span>
+<span class="font-mono text-[10px] text-primary opacity-0 group-hover:opacity-100 transition-opacity">AGI_9</span>
+</li>
+<li class="flex items-center justify-between group border-b border-outline-variant/10 pb-2">
+<span class="font-body text-on-surface-variant">FastAPI</span>
+<span class="font-mono text-[10px] text-primary opacity-0 group-hover:opacity-100 transition-opacity">SPD_8</span>
+</li>
+</ul>
+</div>
+<!-- Databases -->
+<div>
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">database</span>
+<h3 class="font-headline text-lg font-bold uppercase tracking-widest">Databases</h3>
+</div>
+<ul class="space-y-3">
+<li class="flex items-center justify-between group border-b border-outline-variant/10 pb-2">
+<span class="font-body text-on-surface-variant">PostgreSQL</span>
+<span class="font-mono text-[10px] text-primary opacity-0 group-hover:opacity-100 transition-opacity">STORE</span>
+</li>
+<li class="flex items-center justify-between group border-b border-outline-variant/10 pb-2">
+<span class="font-body text-on-surface-variant">MongoDB</span>
+<span class="font-mono text-[10px] text-primary opacity-0 group-hover:opacity-100 transition-opacity">STORE</span>
+</li>
+<li class="flex items-center justify-between group border-b border-outline-variant/10 pb-2">
+<span class="font-body text-on-surface-variant">Redis</span>
+<span class="font-mono text-[10px] text-primary opacity-0 group-hover:opacity-100 transition-opacity">CACHE</span>
+</li>
+<li class="flex items-center justify-between group border-b border-outline-variant/10 pb-2">
+<span class="font-body text-on-surface-variant">MySQL</span>
+<span class="font-mono text-[10px] text-primary opacity-0 group-hover:opacity-100 transition-opacity">LEGACY</span>
+</li>
+</ul>
+</div>
+<!-- Cloud & Infra -->
+<div>
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">cloud</span>
+<h3 class="font-headline text-lg font-bold uppercase tracking-widest">Cloud/Infra</h3>
+</div>
+<ul class="space-y-3">
+<li class="flex items-center justify-between group border-b border-outline-variant/10 pb-2">
+<span class="font-body text-on-surface-variant">AWS</span>
+<span class="font-mono text-[10px] text-primary opacity-0 group-hover:opacity-100 transition-opacity">MASTER</span>
+</li>
+<li class="flex items-center justify-between group border-b border-outline-variant/10 pb-2">
+<span class="font-body text-on-surface-variant">Docker/K8s</span>
+<span class="font-mono text-[10px] text-primary opacity-0 group-hover:opacity-100 transition-opacity">MASTER</span>
+</li>
+<li class="flex items-center justify-between group border-b border-outline-variant/10 pb-2">
+<span class="font-body text-on-surface-variant">Prometheus</span>
+<span class="font-mono text-[10px] text-primary opacity-0 group-hover:opacity-100 transition-opacity">MONITOR</span>
+</li>
+<li class="flex items-center justify-between group border-b border-outline-variant/10 pb-2">
+<span class="font-body text-on-surface-variant">CI/CD</span>
+<span class="font-mono text-[10px] text-primary opacity-0 group-hover:opacity-100 transition-opacity">AUTO</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 04: Contact -->
+<section class="py-32 px-8 md:px-24 bg-surface" id="contact">
+<div class="max-w-4xl mx-auto border border-primary/20 p-12 relative overflow-hidden">
+<!-- Decorative elements -->
+<div class="absolute -right-8 -top-8 w-32 h-32 bg-primary/5 rounded-full blur-3xl"></div>
+<div class="absolute left-0 top-0 w-1 h-12 bg-primary"></div>
+<div class="absolute left-0 top-0 h-1 w-12 bg-primary"></div>
+<div class="relative z-10 text-center">
+<span class="font-mono text-primary text-xs tracking-[0.4em] uppercase mb-16 block">CONNECT WITH ME</span>
+<div class="flex flex-col md:flex-row justify-center items-center gap-12 mt-12">
+<div class="group">
+<p class="font-mono text-[10px] text-on-surface/40 uppercase tracking-widest mb-2">EMAIL_DISPATCH</p>
+<a class="font-headline text-xl font-bold hover:text-primary transition-colors" href="mailto:sragha23@asu.edu">sragha23@asu.edu</a>
+</div>
+<div class="w-[1px] h-12 bg-outline-variant/30 hidden md:block"></div>
+<div class="group">
+<p class="font-mono text-[10px] text-on-surface/40 uppercase tracking-widest mb-2">NETWORK_ID</p>
+<a class="font-headline text-xl font-bold hover:text-primary transition-colors" href="https://www.linkedin.com/in/suhasr3/">linkedin.com/in/suhasr3</a>
+</div>
+<div class="w-[1px] h-12 bg-outline-variant/30 hidden md:block"></div>
+<div class="group">
+<p class="font-mono text-[10px] text-on-surface/40 uppercase tracking-widest mb-2">REPOSITORY</p>
+<a class="font-headline text-xl font-bold hover:text-primary transition-colors" href="https://github.com/SuhasR3">github.com/SuhasR3</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full py-12 px-8 border-t border-[#1c1b1b] bg-[#131313]">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="font-['Space_Grotesk'] text-[10px] uppercase tracking-widest text-[#e5e2e1]/40">
+                © 2024 // NULL_POINTER_REF // BUILD: 0xCF23
             </div>
-            
-          </div>
-          <div class="about__content-skills">
-            <h3 class="about__content-title">My Skills</h3>
-            <div class="skills">
-              <div class="skills__skill">Python</div>
-              <div class="skills__skill">SQL</div>
-              <div class="skills__skill">Power BI</div>
-              <div class="skills__skill">Tableau</div>
-              <div class="skills__skill">Pandas</div>
-              <div class="skills__skill">Numpy</div>
-              <div class="skills__skill">PyTorch</div>
-              <div class="skills__skill">TensorFlow</div>
-              <div class="skills__skill">Matplotlib</div>
-              <div class="skills__skill">Seaborn</div>
-              <div class="skills__skill">Jupyter</div>          
-              <div class="skills__skill">GIT</div>
-              <div class="skills__skill">Bash</div>
-              <div class="skills__skill">C++</div>
-              <div class="skills__skill">R</div>
-              <div class="skills__skill">HTML</div>
-              <div class="skills__skill">CSS</div>
-              <div class="skills__skill">JavaScript</div>
-            
+<div class="flex gap-8">
+<a class="font-['Space_Grotesk'] text-[10px] uppercase tracking-widest text-[#e5e2e1]/30 hover:text-[#b186d9] transition-colors" href="https://github.com/SuhasR3">GITHUB</a>
+<a class="font-['Space_Grotesk'] text-[10px] uppercase tracking-widest text-[#e5e2e1]/30 hover:text-[#b186d9] transition-colors" href="https://www.linkedin.com/in/suhasr3/">LINKEDIN</a>
+<a class="font-['Space_Grotesk'] text-[10px] uppercase tracking-widest text-[#e5e2e1]/30 hover:text-[#b186d9] transition-colors" href="#">STACK_OVERFLOW</a>
+<a class="font-['Space_Grotesk'] text-[10px] uppercase tracking-widest text-[#e5e2e1]/30 hover:text-[#b186d9] transition-colors" href="#">TERMINAL_LOG</a>
+</div>
+<div class="font-mono text-[10px] text-primary/20 italic">
+                // console.log('also into gaming and anime')
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <section id="resume" class="resume sec-pad parallax">
-      <div class="main-container">
-        <h2 class="heading heading-sec heading-sec__mb-med">
-          <span class="heading-sec__main">Resume</span>
-        </h2>
-    
-        <div class="resume__timeline">
-    
-          <!-- Experience 1 -->
-          <div class="resume__item">
-            <div class="resume__indicator"></div>
-            <div class="resume__content">
-              <h3 class="resume__title">Data Management & Analysis Intern</h3>
-              <p class="resume__company">Vollmer Technologies India Pvt Ltd | Feb 2024 - May 2024</p>
-              <ul class="resume__desc">
-                <li>Developed an XGBoost model predicting tool wear with 89% accuracy.</li>
-                <li>Reduced unplanned downtime by 17%, saving $21K annually.</li>
-                <li>Automated weekly report generation from JSON file using Python scripts, reducing manual process time by 2 hours per week.
-                  .</li>
-                <li>Created Power BI dashboards for real-time KPI visualization.</li>
-              </ul>
-            </div>
-          </div>
-    
-          <!-- Experience 2 -->
-          <div class="resume__item resume__item--right">
-            <div class="resume__indicator"></div>
-            <div class="resume__content">
-              <h3 class="resume__title">Data Analyst Intern</h3>
-              <p class="resume__company">A. O. Smith India Water Products Pvt Ltd | Mar 2023 - May 2023</p>
-              <ul class="resume__desc">
-                <li>Designed a time series forecasting model using Python to analyze seasonal demand trends, optimize inventory, and align
-                  production schedules, cutting inventory costs by 48%.</li>
-                  <li>Validated results using Arena Simulation for scenario modeling.</li>
-                </ul>
-            </div>
-          </div>
-    
-          <!-- Project 1 -->
-          <div class="resume__item">
-            <div class="resume__indicator"></div>
-            <div class="resume__content">
-              <h3 class="resume__title">Data Analyst Intern</h3>
-              <p class="resume__company">Str8bat Solutions India Pvt Ltd | Sep 2022 - Jan 2023</p>
-              <ul class="resume__desc">
-                <li>Built a Random Forest Regression model achieving 81% accuracy.</li>
-                <li>Automated ETL tasks and data pipeline using Python and SQL, reducing manual efforts by 87%.</li>
-                <li>Collaborated with cross-functional teams using Agile methodology.</li>
-              </ul>
-            </div>
-          </div>
-    
-        </div>
-      </div>
-    </section>
-    
-
-    <section id="projects" class="projects sec-pad">
-      <div class="main-container">
-        <h2 class="heading heading-sec heading-sec__mb-bg">
-          <span class="heading-sec__main">Projects</span>
-          <span class="heading-sec__sub">
-            Showcasing data-driven solutions where machine learning, analytics, and automation meet real-world problem-solving
-          </span>
-        </h2>
-
-        <div class="projects__content">
-          <div class="projects__row">
-            <div class="projects__row-img-cont">
-              <img
-                src="./assets/jpeg/p1.png"
-                alt="Software Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
-            </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Sales-Forecast-with-Seasonal-ARIMA</h3>
-              <p class="projects__row-content-desc">
-                This project demonstrates the application of the ARIMA (AutoRegressive Integrated Moving Average), Seasonal ARIMA models to forecast sales trends using time series data and is built in Python.  The model successfully predicts the trends and patterns of the expected sales. 
-              </p>
-              <a
-                href="https://github.com/SuhasR3/Sales-Forecast-with-Seasonal-ARIMA/tree/main"
-                class="btn btn--med btn--theme dynamicBgClr"
-                target="_blank"
-                >Case Study</a
-              >
-            </div>
-          </div>
-          <div class="projects__row">
-            <div class="projects__row-img-cont">
-              <img
-                src="./assets/jpeg/p2.png"
-                alt="Software Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
-            </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Lung-Disease-Classification</h3>
-              <p class="projects__row-content-desc">
-                This project evaluates how different optimizers affect the performance of image classification models in detecting lung conditions such as bacterial pneumonia, COVID-19, tuberculosis, viral pneumonia, and normal lungs using chest X-ray images.
-              </p>
-              <a
-                href="https://github.com/SuhasR3/Lung-Disease-Classification/blob/main/README.md"
-                class="btn btn--med btn--theme dynamicBgClr"
-                target="_blank"
-                >Case Study</a
-              >
-            </div>
-          </div>
-          <!-- <div class="projects__row"> -->
-            <!-- <div class="projects__row-img-cont">
-              <img
-                src="./assets/jpeg/project-mockup-example.jpeg"
-                alt="Software Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
-            </div> -->
-            <!-- <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Project 3</h3>
-              <p class="projects__row-content-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-                facilis tempora, explicabo quae quod deserunt eius sapiente
-                praesentium.
-              </p>
-              <a
-                href="./project-3.html"
-                class="btn btn--med btn--theme dynamicBgClr"
-                target="_blank"
-                >Case Study</a
-              >
-            </div> -->
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer class="main-footer">
-      <div class="main-container">
-        <div class="main-footer__upper">
-          <div class="main-footer__row main-footer__row-1">
-            <h2 class="heading heading-sm main-footer__heading-sm">
-              <span>Social</span>
-            </h2>
-            <div class="main-footer__social-cont">
-              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/suhasr3/">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/linkedin-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="https://github.com/SuhasR3">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/github-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="mailto:sragha23@asu.edu">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/email.png"
-                  alt="icon"
-                />
-              </a>
-            </div>
-          </div>
-          <div class="main-footer__row main-footer__row-2">
-            <h4 class="heading heading-sm text-lt">Suhas Raghavendra</h4>
-            <p class="main-footer__short-desc">
-              I'm a passionate Data Analyst and Machine Learning developer! 
-              Let's collaborate and build stuff that makes the world a better place!
-  
-            </p>
-          </div>
-        </div>
-
-        <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
-        <div class="main-footer__lower">
-          Thank you for reading till the end!
-          
-        </div>
-      </div>
-    </footer>
-
-    <script src="./index.js"></script>
-  </body>
-</html>
+</div>
+</footer>
+</main>
+<!-- Scanline Overlay -->
+<div class="fixed inset-0 pointer-events-none z-50 overflow-hidden">
+<div class="scanline top-0 opacity-10"></div>
+</div>
+</body></html>
